@@ -11,13 +11,13 @@
 /* ROOT */
 
 :root{
-    --green-color: #077004;
+    --green-color: #16bb1188;
 
 }
 
 /*BODDY*/
 body{
-    background-color: var(--green-color);
+    background-color: #fff;
 
 }
 /*MAIN*/
@@ -82,6 +82,7 @@ header nav ul li a:hover{
     background-color: #f5bf5b;
     display: flex;
     flex-direction: row;
+    z-index: 999;
   
 
 }
@@ -105,6 +106,7 @@ header nav ul li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 
 
 }
@@ -152,22 +154,45 @@ header nav ul li a:hover{
 
 /* SECTION-CARROCEUL */
 .section-carroceul{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
+    padding: 2% 1%;
 }
+.section-carroceul h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: #97BA76;
+    margin-top: 3%;
+}
+
 .swiper{
-    background-color: #f5bf5b;
-    height: 400px;
+    
+    height: 600px;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-inline: auto;
+    padding: 1%;
 }
 
 .swiper-slide{
+    height: 80%;
+    margin-top: 2%;
     background-color: #b5ffb3;
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 5px 10px 3px #0a0a0a;
+    border-radius: 5px;
+
+
     
 }
 
@@ -179,6 +204,7 @@ header nav ul li a:hover{
     align-items: flex-end;
     justify-content: flex-end;
 
+    
 }
 .swiper-slide figure img{
     width: 100%;
@@ -194,51 +220,121 @@ header nav ul li a:hover{
     align-items: center;
     justify-content: center;
     position: absolute;
-    opacity: 0;
     top: 0;
     left: 0;
-    background-color: #00000091;
+    background-color: #00000000;
     transition: 1s;
+    animation: notsaibot 1s;
     
 }
+.swiper-slide div button{
+    display: none;
+    height: 5%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    
+}
+
 .swiper-slide:hover div{
+    display: flex;
     opacity: 1;
-    animation: saibot 1s;
+    animation: saibot 1.5s;
+    background-color: #00000091;
+}
+.swiper-slide:hover div button{
+    display:flex;
+    background-color: #f5bf5b;
+    color: #077004;
+    cursor: pointer;
+    
+
 }
 @keyframes saibot{
     0%{
-        left: -100%;
+        left: -75%;
     }
+   
 } 
 
-/* .go{
+@keyframes notsaibot{
+    100%{
+        
+        left: 100%;
+        
+    }
 
-animation: saibot 1s;
-opacity: 1 !important;
 }
 
-.back{
-    animation: notsaibot 1s !important;
-    opacity: 0 !important;
-} */
-
-
-
-
-/* @keyframes notsaibot{
-    0%{
-        left: 0%;
-    }
-}  */
 
 /* SECTION-SOBRE */
 
 .section-about{
-    background-color: #55b352;
+   
     
+    height: 600px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 1%;
+    gap: 10px;
+    border-radius: 10px;
+}
+.section-about h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: #97BA76;
+}
+    
+
+
+.section-about h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #19250d;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin: 3% 0;
 }
 
 
 
+.discription{
+    height: 100%;
+    width: 99%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 2fr;
+    gap: 5%;
+    background-color: #f5bf5b;
+    padding: 2%;
+    border-radius: 10px;
+    
+    
+    
+    
+
+}
+.discription div{
+    background-color: #ceebb5;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3%;
+    padding: 2%;
+}
 
 /* FOOTER */

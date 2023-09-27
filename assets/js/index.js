@@ -31,10 +31,11 @@ var swiper = new Swiper(".mySwiper", {
 
 //   GO ANDE BACK ANIMATION
 
-$(".swiper-slide").mouseenter(function(){
-    $(".swiper-slide div").addClass("go"); 
-});
+// $(".swiper-slide").mouseenter(function(){
+//     $(".swiper-slide div").addClass("go"); 
+// });
 
-$(".swiper-slide").mouseout(function(){
-    $(".swiper-slide div").toggleclass("go");
-});
+// $(".swiper-slide").mouseout(function(){
+//     $(".swiper-slide div").toggleclass("go");
+// });
+
