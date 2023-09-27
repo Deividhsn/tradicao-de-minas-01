@@ -184,6 +184,7 @@ header nav ul li a:hover{
 
 .swiper-slide{
     height: 80%;
+    width: 50%;
     margin-top: 2%;
     background-color: #b5ffb3;
     cursor: pointer;
