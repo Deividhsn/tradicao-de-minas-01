@@ -156,7 +156,78 @@ header nav ul li a:hover{
     width: 100%;
     text-align: center;
 }
+.swiper{
+    background-color: #f5bf5b;
+    height: 400px;
+    width: 90%;
+    margin-inline: auto;
+}
 
+.swiper-slide{
+    background-color: #b5ffb3;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.swiper-slide figure {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* display: flex; */
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+.swiper-slide figure img{
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+
+}
+.swiper-slide div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: #00000091;
+    transition: .3s;
+    
+}
+/* .go{
+
+animation: saibot 1s;
+opacity: 1 !important;
+}
+
+.back{
+    animation: notsaibot 1s !important;
+    opacity: 0 !important;
+} */
+
+
+.swiper-slide:hover div{
+    opacity: 1;
+    animation: saibot 1s;
+}
+@keyframes saibot{
+    0%{
+        left: -100% !important;
+    }
+} 
+
+/* @keyframes notsaibot{
+    0%{
+        left: 0%;
+    }
+}  */
 
 /* SECTION-SOBRE */
 
