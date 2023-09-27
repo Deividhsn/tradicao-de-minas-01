@@ -69,7 +69,7 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #0b4723;
 }
 
 header nav ul li a:hover{
@@ -79,7 +79,7 @@ header nav ul li a:hover{
 
 .alterHeader{
     height: 55px;
-    background-color: rgba(66, 255, 75, 0.527);
+    background-color: #f5bf5b;
     display: flex;
     flex-direction: row;
   
@@ -89,7 +89,10 @@ header nav ul li a:hover{
     width:100px;
     margin: 4px 3px;
 }
-
+.alterHeader nav ul li a{
+    color: #0b4723;
+    font-weight: 900;
+}
 
 
 /* SECTION */
@@ -98,38 +101,53 @@ header nav ul li a:hover{
 .section-banner{
     height: 100vh;
     width: 100%;
-    background-image: url(https://pivott.world/wp-content/uploads/2021/04/Cookieless_Header.jpg);
+    background-image: url(https://www.mundoboaforma.com.br/wp-content/uploads/2021/06/Biscoito-de-polvilho-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  
+
 
 }
 .section-banner div{
     width: 100%;
     height: 100%;
-    background-color: #0000004f;
+    background-color: #ffffff36;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 3%;
+    
 }
 
 .section-banner div h1{
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 3px;
+    margin-top: 10%;
+}
+.section-banner div b{
+    color: #0b4723;
 }
 .section-banner div p{
-    font-size: 1.3rem;
+    width: 80%;
+    font-size: 1.5rem;
     margin: 5% 0;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+
 }
 .section-banner div button{
-
+    height: 30px;
+    width: 150px;
     font-size: 1rem;
     padding: 2px 20px;
     border-radius: 5px;
     text-align: center;
+    font-weight: bolder;
+    color: #077004;
+    background-color: #f5bf5b;
 }
 
 /* SECTION-CARROCEUL */
