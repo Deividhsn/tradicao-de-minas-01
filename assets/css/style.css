@@ -198,9 +198,19 @@ header nav ul li a:hover{
     top: 0;
     left: 0;
     background-color: #00000091;
-    transition: .3s;
+    transition: 1s;
     
 }
+.swiper-slide:hover div{
+    opacity: 1;
+    animation: saibot 1s;
+}
+@keyframes saibot{
+    0%{
+        left: -100%;
+    }
+} 
+
 /* .go{
 
 animation: saibot 1s;
@@ -213,15 +223,7 @@ opacity: 1 !important;
 } */
 
 
-.swiper-slide:hover div{
-    opacity: 1;
-    animation: saibot 1s;
-}
-@keyframes saibot{
-    0%{
-        left: -100% !important;
-    }
-} 
+
 
 /* @keyframes notsaibot{
     0%{
