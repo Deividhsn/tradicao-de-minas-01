@@ -13,10 +13,9 @@ window.addEventListener("scroll", function () {
      loop: true,
      autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
-      
-      
+      disableOnInteraction: false,  
     },
+   
      pagination: {
        el: ".swiper-pagination",
        clickable: true,
@@ -43,6 +42,7 @@ window.addEventListener("scroll", function () {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
+    spaceBetween: 50,
     slidesPerView: "1.5",
     loop: true,
    
@@ -51,7 +51,7 @@ window.addEventListener("scroll", function () {
       stretch: 0,
       depth: 100,
       modifier: 1,
-      slideShadows: false,
+      slideShadows: true,
     
     },
     pagination: {
