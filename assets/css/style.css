@@ -22,13 +22,6 @@ body{
     background-color: #fff;
 
 }
-/*MAIN*/
-/* main{
-    width: 100%;
-    height: 100vh;
-    margin-inline: auto;
-} */
-
 
 /* HEADER */
 header{
@@ -152,193 +145,16 @@ header nav ul li a:hover{
     border-radius: 5px;
     text-align: center;
     font-weight: bolder;
-    color: #077004;
-    background-color: #f5bf5b;
-}
-
-/* SECTION-CARROCEUL */
-.section-carroceul{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    padding: 2% 1%;
-}
-.section-carroceul h1{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
     color: #fff;
-    letter-spacing: 2px;
-    font-weight: 900;
     background-color: #97BA76;
-    margin-top: 3%;
+    border:solid 1px  #077004;
 }
-
-.swiper{
-    
-    height: 600px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-inline: auto;
-    padding: 1%;
-}
-
-.swiper-carousel{
-    height: 80%;
-    width: 50%;
-    margin-top: 2%;
-    background-color: #b5ffb3;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 5px 10px 3px #0a0a0a;
-    border-radius: 5px;
-
-
-    
-}
-
-.swiper-carousel figure {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    /* display: flex; */
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    
-}
-.swiper-carousel figure img{
-    width: 100%;
-    position: absolute;
-    top:0px;
-    left: 0px;
+.section-banner div button:hover{
+    background-color: #fff;
+    color: #97BA76;
+    border:solid 1px  #f29031;
 
 }
-.swiper-carousel div{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #00000000;
-    transition: 1s;
-    animation: notsaibot 1s;
-    
-}
-.swiper-carousel div button{
-    display: none;
-    height: 5%;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    text-transform: capitalize;
-    border-radius: 5px;
-    
-}
-
-.swiper-carousel:hover div{
-    display: flex;
-    opacity: 1;
-    animation: saibot 1.5s;
-    background-color: #00000091;
-}
-.swiper-carousel:hover div button{
-    display:flex;
-    background-color: #f5bf5b;
-    color: #077004;
-    cursor: pointer;
-    
-
-}
-@keyframes saibot{
-    0%{
-        left: -75%;
-    }
-   
-} 
-
-@keyframes notsaibot{
-    100%{
-        
-        left: 100%;
-        
-    }
-
-}
-
-
-/* SECTION-SOBRE */
-
-.section-about{
-   
-    height:max-content !important;
-    width: 100%;  
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: auto;
-    padding: 2% 1%;
-    gap: 10px;
-    border-radius: 10px;
-}
-.section-about h1{
-    width: 100%;
-    text-align: center;
-    font-size: 2rem;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 900;
-    background-color: #97BA76;
-    margin-bottom: 3%;
-}
-
-
-.discription{
-    height: 100%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
-    background-color: #f5bf5b; 
-    padding: 2%;
-    border-radius: 10px;   
-
-}
-
-
-.discription div{
-    
-    background-color: #ceebb5;
-    height: 250px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2%;
-   
-}
-
-.discription div h3{
-    margin-bottom: 2%;
-    font-size: 1.2rem;
-    color: #4b4747;
-}
-.discription div p{
-    text-align: justify;
-    width: 80%;
-    line-height: 1.3rem;
-}
-
 
 /* section-all-produtos */
 
@@ -363,6 +179,17 @@ header nav ul li a:hover{
     letter-spacing: 2px;
     font-weight: 900;
     background-color: #97BA76;
+}
+.swiper{
+    
+    height: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    padding: 1%;
 }
     
 
@@ -430,7 +257,7 @@ header nav ul li a:hover{
 }
 
 .swiper-products .sale a{
-    height: 50px;
+    height: 25px;
     width: 200px;
     font-size: 1rem;
   
@@ -443,10 +270,124 @@ header nav ul li a:hover{
     border-radius: 5px;
     text-align: center;
     font-weight: bolder;
-    color: #f5bf5b;
-    background-color: #0b4723;
+    color: #fff;
+    background-color: #97BA76;
+    border:solid 1px  #077004;
     
 }
+.swiper-products .sale button:hover{
+    background-color: #fff;
+    color: #97BA76;
+    border:solid 1px  #f29031;
+}
+.swiper-button-next{
+    color: #f29031;
+   
+}
+.swiper-button-prev{
+    color: #f29031;
+   
+}
+
+
+
+
+
+
+/* SECTION-SOBRE */
+
+.section-about{
+   
+    height:max-content !important;
+    width: 100%;  
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    padding: 2% 1%;
+    gap: 10px;
+    border-radius: 10px;
+}
+.section-about h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 900;
+    background-color: #97BA76;
+    margin-bottom: 3%;
+}
+.dealer{
+    height: max-content;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.dealer figure{
+    
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dealer figure img{
+    height: 100%;
+    padding: 1%;
+
+}
+
+.dealer-information{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+   
+    
+}
+.dealer-information p{
+    margin-top: 3%;
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #414141f5;
+}
+
+.dealer-information div{
+    display: flex;
+    gap: 100px;
+}
+
+.dealer-information a{
+    background-color: #97BA76;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    border: solid 1px  #077004;
+}
+.dealer-information a:hover{
+    background-color: #fff;
+    color: #97BA76;
+    border:solid 1px  #f29031;
+}
+
+
+
+
 
 /* FOOTER */
 footer{
@@ -457,7 +398,7 @@ footer{
 }
 footer .contacts{
     
-    height: calc(100% - 50px);
+    height: calc(100% - 25px);
    
 }
 footer .contacts hr{
@@ -470,7 +411,7 @@ footer .contacts hr{
 
 
 .end-page{
-    height: 50px;
+    height: 25px;
     width: 100%;
     background-color: #f5bf5b;
 

@@ -6,45 +6,17 @@ window.addEventListener("scroll", function () {
 
 // Carroussel
 
- var swiper = new Swiper(".mySwiper", {
-   
-     slidesPerView: 1,
-     spaceBetween: 10,
-     loop: true,
-     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,  
-    },
-   
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-       
-     },
-     breakpoints: {
-       640: {
-         slidesPerView: 2,
-         spaceBetween: 20,
-       },
-       768: {
-         slidesPerView: 2,
-         spaceBetween: 40,
-       },
-       1024: {
-         slidesPerView: 3,
-         spaceBetween: 50,
-       },
-     },
-   });
-
-
   var swiper = new Swiper(".my", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    spaceBetween: 50,
-    slidesPerView: "1.5",
+    spaceBetween: 100,
+    slidesPerView: "1",
     loop: true,
+    // autoplay: {
+    //        delay: 5000,
+    //         disableOnInteraction: false,  
+    //      },
    
     coverflowEffect: {
       rotate: 50,
@@ -56,5 +28,9 @@ window.addEventListener("scroll", function () {
     },
     pagination: {
       el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
