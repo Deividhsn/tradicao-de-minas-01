@@ -408,6 +408,26 @@ footer .contacts hr{
    
     
 }
+footer .contacts ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    padding: 3%;
+    
+}
+footer .contacts ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+footer .contacts ul li a img{
+
+    height: 50px;
+    width: 50px;
+
+}
 
 
 .end-page{
