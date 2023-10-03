@@ -20,6 +20,7 @@
 /*BODDY*/
 body{
     background-color: #fff;
+    
 
 }
 
@@ -31,7 +32,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1% 0;
+    padding: 1%;
     position: fixed;
 }
 
@@ -51,6 +52,13 @@ header nav ul{
     justify-content: center;
     gap: 5%;  
 }
+header svg{
+    fill: var(--secundary-bck-color);
+    width: 50px;
+    height: 50px;
+    display: none;
+  
+  }
 
 header nav ul li{
     width: 80px; 
@@ -75,7 +83,7 @@ header nav ul li a:hover{
 }
 
 .alterHeader{
-    height: 55px;
+    height: 70px;
     background-color: #f5bf5b;
     display: flex;
     flex-direction: row;
@@ -249,7 +257,7 @@ footer h3{
     color: #000000;
     font-size: 1.2rem;
     font-weight: 500;
-
+    
 }
 
 
@@ -499,5 +507,160 @@ footer .contacts ul li h3{
     align-items: center;
     text-align: center;
     color: #0b4723;
+
+}
+
+/*RESPONSIVIDADE*/
+
+@media all and (max-width: 860px){
+
+    header{
+        height: 70px;
+        background-color:#f5bf5b;
+        z-index: 999;
+        display: flex;
+        flex-direction: row;
+        gap: 80%;
+      }
+      
+      header nav ul{
+        display: none;
+    
+      }
+      header svg{
+        display: flex;
+        height: 35px;
+        width: 35px;
+        margin-right: 10px;
+        
+      }
+
+      
+      header ul li{
+        background-color: #e54260;
+        height: 40px;
+        width: 80%;
+      
+        border-radius: 5px;
+      }
+      header ul li a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+      }
+     
+      .display{
+        position: absolute;
+        background-color: #3b3939;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8%;
+        animation: openMenu .5s;
+      }
+    
+    @keyframes alterHeader {
+      0%{
+        width: 3%;
+        left: 50%;
+        opacity: 0;
+      }
+    
+      
+    }
+    
+    
+    header div img {
+        width: 100px;
+      } 
+
+
+    .section-banner div h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .section-banner div p{
+        font-size: 1.2rem;
+    }
+
+    footer .contacts ul li{
+        width: 70px;
+        height: 70px;
+        gap: 3px;
+        justify-content: center;
+      
+    }
+
+    i{
+        height: 35px;
+        width: 35px;
+        font-size: 25px;
+        color: #077004;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    footer .contacts ul li h3{
+        font-size: .8rem;     
+    }
+
+}
+
+@media all and (max-width: 770px){
+
+    header{
+        padding: 5%;
+    }
+
+    .swiper-products figure img{
+        height: 80%;
+        width: 100%;
+    }
+
+    .swiper-products .sale{
+        height: 80%;
+    }
+    .swiper-products .sale h2{
+        font-size: 1.3rem;
+    }
+
+
+    .swiper-products .sale p{
+        font-size: 1rem;
+    }
+    footer .contacts ul {
+        gap: 100px;
+    }
+
+    footer .contacts ul li{
+        gap: 0;
+    }
+
+}
+
+@media all and (max-width: 650px){
+    
+    .swiper-products figure{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .swiper-products figure img{
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .swiper-products .sale{
+        display: none;
+    }
 
 }

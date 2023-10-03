@@ -4,6 +4,11 @@ window.addEventListener("scroll", function () {
 
 });
 
+// CLICK MENU RESPONSIVO
+$(".openMenu").click(function(){  
+  $("header ul").toggleClass("display"); 
+
+})
 // Carroussel
 
   var swiper = new Swiper(".my", {
