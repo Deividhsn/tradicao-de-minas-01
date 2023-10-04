@@ -394,6 +394,7 @@ footer h3{
 .dealer-information div{
     display: flex;
     gap: 250px;
+    margin-bottom: 5%;
 }
 
 .dealer-information a{
@@ -763,7 +764,7 @@ footer .contacts ul li h3{
     .section-about h1,
     .section-all-produtos h1,
    footer h3{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 1px 0;
     }
 
@@ -799,7 +800,7 @@ footer .contacts ul li h3{
     }
 
     .swiper-products figure img{
-        height: 90%;
+        height: 70%;
         width: 90%;
     }
     .swiper-products .pictures button{
