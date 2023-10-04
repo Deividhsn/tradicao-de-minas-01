@@ -39,3 +39,10 @@ $(".openMenu").click(function(){
       prevEl: '.swiper-button-prev',
     },
   });
+
+  $(".aboutMore").click(function(){  
+    $(".swiper-products .sale").toggleClass("overlap"); 
+
+   
+  
+  })
