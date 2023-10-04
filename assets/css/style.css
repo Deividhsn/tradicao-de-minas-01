@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     border: 0;
     padding: 0;
@@ -5,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    
 
 
 }
@@ -20,7 +21,7 @@
 /*BODDY*/
 body{
     background-color: #fff;
-    
+    font-family: 'Noto Sans', sans-serif;
 
 }
 
@@ -73,6 +74,7 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     color: #0b4723;
+    font-weight: 600;
 }
 
 header nav ul li a:hover{
@@ -771,6 +773,9 @@ footer .contacts ul li h3{
     .section-banner{
         height: 80vh;
     }
+    .section-banner div{
+        gap: 0;
+    }
 
     .section-banner div h1{
         font-size: 1.5rem;
@@ -791,7 +796,8 @@ footer .contacts ul li h3{
 
     .overlap{
         top: 26px;
-        right: 21px;
+        right: 19px;
+        width: 101%;
     }
 
     .dealer-information p{
@@ -827,5 +833,9 @@ footer .contacts ul li h3{
         display: none;
     }
         
+    
+}
+
+@media all and (max-width: 500px){
     
 }
