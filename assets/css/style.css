@@ -49,9 +49,10 @@ header nav{
 }
 header nav ul{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 5%;  
+    justify-content: space-around;     
+    /* gap: 5%;   */
 }
 header svg{
     fill: var(--secundary-bck-color);
@@ -73,15 +74,16 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1% 55px;
     color: #0b4723;
     font-weight: 600;
 }
 
 header nav ul li a:hover{
-    background-color: #97BA76;
-    padding: 1% 55px;
+    background-color: #97BA76;  
     border-radius: 5px;
-    color: #f5bf5b;   
+    color: #f5bf5b;
+    border: solid 1px #f29031;   
 }
 
 .alterHeader{
@@ -511,6 +513,7 @@ footer .contacts ul li h3{
     letter-spacing: normal;
     color: #077004;
     background: none;
+    font-weight: 600;
     
 }
 
@@ -542,6 +545,7 @@ footer .contacts ul li h3{
       }
       
       header nav ul{
+      
         display: none;
     
       }
@@ -555,11 +559,12 @@ footer .contacts ul li h3{
 
       
       header ul li{
-        background-color: #e54260;
-        height: 40px;
-        width: 80%;
-      
+        background-color: #f29031;
+        height: 30px !important;
+        width: 50% !important;
         border-radius: 5px;
+        
+       
       }
       header ul li a{
         width: 100%;
@@ -571,20 +576,27 @@ footer .contacts ul li h3{
       }
      
       .display{
+       
         position: absolute;
-        background-color: #3b3939;
+        background-color: #97BA76;
         top: 70px;
         left: 0;
         width: 100%;
-        height: 120vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: center;
-        padding-top: 8%;
+        padding-top: 8%; 
         animation: openMenu .5s;
+        gap: 5%;
       }
+
+      
+
+
     
-    @keyframes alterHeader {
+    @keyframes openMenu {
       0%{
         width: 3%;
         left: 50%;
@@ -610,7 +622,7 @@ footer .contacts ul li h3{
     }
 
     footer .contacts ul li{
-        width: 70px;
+        width: 80px;
         height: 70px;
         gap: 3px;
         justify-content: center;
@@ -700,6 +712,7 @@ footer .contacts ul li h3{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 20% !important;
         height: 5% !important;
         padding: 2px 20px;
@@ -782,7 +795,7 @@ footer .contacts ul li h3{
     }
 
     .section-banner div p{
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .swiper-products figure img{
@@ -792,12 +805,18 @@ footer .contacts ul li h3{
     .swiper-products .pictures button{
         bottom: 40px;
         width: 25% !important;
+        text-align: center;
     }
 
     .overlap{
         top: 26px;
         right: 19px;
         width: 101%;
+    }
+
+    .swiper-products .sale p,
+    .swiper-products .sale p b{
+        font-size: .8rem;
     }
 
     .dealer-information p{
@@ -836,6 +855,46 @@ footer .contacts ul li h3{
     
 }
 
-@media all and (max-width: 500px){
-    
+@media all and (max-width: 426px){
+    .overlap{
+        
+        left: 18px;
+        
+    }
+
+}
+@media all and (max-width: 376px){
+    .overlap{
+        
+        left: 17px;
+        
+    }
+    .dealer-information p{
+        font-size: .8rem;
+        width: 100%;
+        
+    }
+    .dealer-information a{
+        width: 100px;
+        font-size: .8rem;
+    }
+
+    .section-about h1,
+    .section-all-produtos h1,
+   footer h3{
+        font-size: 1.2rem;
+        padding: 1px 0;
+    }
+
+    .end-page p{
+        font-size: .8rem;
+    }
+}
+@media all and (max-width: 360px){
+    .overlap{
+        
+        left: 15px;
+        
+    }
+
 }
