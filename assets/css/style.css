@@ -109,7 +109,7 @@ header nav ul li a:hover{
 
 /* SECTION-BANNER */
 .section-banner{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(https://www.mundoboaforma.com.br/wp-content/uploads/2021/06/Biscoito-de-polvilho-1.jpg);
     background-repeat: no-repeat;
@@ -135,7 +135,7 @@ header nav ul li a:hover{
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 3px;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .section-banner div b{
     color: #0b4723;
@@ -160,6 +160,7 @@ header nav ul li a:hover{
     color: #fff;
     background-color: #97BA76;
     border:solid 1px  #077004;
+    margin-bottom: 5%;
 }
 .section-banner div button:hover{
     background-color: #fff;
