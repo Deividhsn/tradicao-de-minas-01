@@ -122,7 +122,7 @@ header nav ul li a:hover{
 .section-banner div{
     width: 100%;
     height: 100%;
-    background-color: #ffffff36;
+    background-color: #5c5c5c21;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,6 +136,7 @@ header nav ul li a:hover{
     font-weight: 900;
     letter-spacing: 3px;
     margin-top: 20%;
+
 }
 .section-banner div b{
     color: #0b4723;
@@ -147,6 +148,7 @@ header nav ul li a:hover{
     font-weight: 400;
     color: #000000;
     text-align: center;
+    line-height: 2.5rem;
 
 }
 .section-banner div button{
@@ -401,7 +403,8 @@ footer h3{
 .dealer-information a{
     background-color: #97BA76;
     height: 30px;
-    width: 150px;
+    width: 100%px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
