@@ -30,11 +30,10 @@ header{
     height:max-content;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding: 1% 2%;
     position: fixed;
+    gap: 45%;
 }
 
 header div img{
@@ -51,8 +50,8 @@ header nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;     
-    /* gap: 5%;   */
+    /* justify-content: space-around;      */
+     gap: 5%;
 }
 header svg{
     fill: var(--secundary-bck-color);
@@ -91,6 +90,7 @@ header nav ul li a:hover{
     background-color: #f5bf5b;
     display: flex;
     flex-direction: row;
+    gap: 50%;
     z-index: 999;
   
 
