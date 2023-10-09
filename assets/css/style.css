@@ -676,13 +676,21 @@ footer .contacts ul li h3{
         height: 80%;
     }
     .swiper-products .sale h2{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+    .swiper-products .sale h4{
+        font-size: 1rem;
     }
 
 
     .swiper-products .sale p{
+        font-size: .9rem;
+    }
+
+    .swiper-products .sale p b{
         font-size: 1rem;
     }
+
 
     .dealer-information div{
         gap: 100px;
@@ -809,6 +817,7 @@ footer .contacts ul li h3{
 
     .section-banner div p{
         font-size: .8rem;
+        line-height: 1.2rem;
     }
 
     .swiper-products figure img{
@@ -817,7 +826,7 @@ footer .contacts ul li h3{
     }
     .swiper-products .pictures button{
         bottom: 40px;
-        width: 25% !important;
+        width: 150px !important;
         text-align: center;
     }
 
@@ -838,8 +847,8 @@ footer .contacts ul li h3{
         
     }
     .dealer-information a{
-        width: 100px;
-        font-size: 1rem;
+        width: 300px;
+        font-size: .8rem;
     }
     footer{
         height: 190px;
@@ -893,8 +902,10 @@ footer .contacts ul li h3{
         width: 100%;
         
     }
+
+
     .dealer-information a{
-        width: 100px;
+        width: 270px !important;
         font-size: .8rem;
     }
 
