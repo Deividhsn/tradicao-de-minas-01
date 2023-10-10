@@ -43,9 +43,7 @@ $(".openMenu").click(function(){
 
 // Ajuste button para responsividade
 
-  $(".aboutMore").click(function(){  
-    $(".products .sale").toggleClass("overlap"); 
+$(".aboutMore").click(function(){
+  $(".pictures button").toggleClass("testando")
 
-   
-  
-  })
+})

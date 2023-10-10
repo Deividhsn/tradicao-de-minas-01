@@ -208,43 +208,53 @@ footer h3{
     gap: 10px;
 }
 
+.products{
+    height: 600px;
+    width: 100%;
+    background-color: #97BA76;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.my .pictures{
+    background-color: #f5bf5b;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .my img{
     width: 100%;
     height: 500px;
 }
 
-.products{
-    height: 600px;
-    width: 100%;
-    background-color: #97BA76;
-    overflow: hidden;
-    position: relative;
-}
-
-.products .sale{
-
+.sale{    
     display: none;
+} 
+
+.aboutMore{
+    background-color: #005c1c;
+    height: 20%;
+    width: 30%;
 }
 
-.overlap{
-    background-color: #e54260;
-    height: 100% !important;
-    width: 100% !important;
-    display: flex !important;
+.pictures .aboutMore:hover .sale{
+    display: block !important;
     position: absolute;
-    z-index: 999;
-    top: 0px;
-    border-radius: 10px;
-    
+    top: 50%;
+
 }
-.sale .aboutMore{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20% !important;
-    height: 5% !important;
-}
+
+
+
 
 
 /* SECTION-SOBRE */
@@ -681,7 +691,7 @@ footer .contacts ul li h3{
         border-radius: 10px;
         
     }
-   .sale .aboutMore{
+  .products .sale .aboutMore{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -731,26 +741,7 @@ footer .contacts ul li h3{
         line-height: 1.2rem;
     }
 
-    .swiper-products figure img{
-        height: 70%;
-        width: 90%;
-    }
-    .swiper-products .pictures button{
-        bottom: 40px;
-        width: 150px !important;
-        text-align: center;
-    }
-
-    .overlap{
-        top: 26px;
-        right: 19px;
-        width: 101%;
-    }
-
-    .swiper-products .sale p,
-    .swiper-products .sale p b{
-        font-size: .8rem;
-    }
+   
 
     .dealer-information p{
         font-size: 1rem;
@@ -803,11 +794,7 @@ footer .contacts ul li h3{
 
 }
 @media all and (max-width: 376px){
-    .overlap{
-        
-        left: 17px;
-        
-    }
+
     .dealer-information p{
         font-size: .8rem;
         width: 100%;
@@ -832,10 +819,5 @@ footer .contacts ul li h3{
     }
 }
 @media all and (max-width: 360px){
-    .overlap{
-        
-        left: 15px;
-        
-    }
 
 }
