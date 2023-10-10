@@ -44,7 +44,7 @@ $(".openMenu").click(function(){
 // Ajuste button para responsividade
 
   $(".aboutMore").click(function(){  
-    $(".swiper-products .sale").toggleClass("overlap"); 
+    $(".products .sale").toggleClass("overlap"); 
 
    
   

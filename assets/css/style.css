@@ -205,15 +205,46 @@ footer h3{
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr;
     text-align: center;
-    
-    
+    gap: 10px;
 }
 
+
 .my img{
-    width: 60%;
+    width: 100%;
     height: 500px;
 }
 
+.products{
+    height: 600px;
+    width: 100%;
+    background-color: #97BA76;
+    overflow: hidden;
+    position: relative;
+}
+
+.products .sale{
+
+    display: none;
+}
+
+.overlap{
+    background-color: #e54260;
+    height: 100% !important;
+    width: 100% !important;
+    display: flex !important;
+    position: absolute;
+    z-index: 999;
+    top: 0px;
+    border-radius: 10px;
+    
+}
+.sale .aboutMore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20% !important;
+    height: 5% !important;
+}
 
 
 /* SECTION-SOBRE */
