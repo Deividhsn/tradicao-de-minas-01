@@ -114,6 +114,9 @@ header nav ul li a:hover{
 
 
 /* SECTION */
+    
+/*Line*/
+
 
 /* SECTION-BANNER */
 .section-banner{
@@ -428,8 +431,6 @@ footer h3,
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
-    padding: 2% 1%;
-    gap: 10px;
     border-radius: 10px;
     margin-top: 80px;
 }
@@ -443,43 +444,55 @@ footer h3,
 }
 .dealer{
     height: max-content;
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
+    width: 88%;
+     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
+    margin-top: 60px;
     
+}
+
+.dealer div{
+    height: 500px;
 }
 
 .dealer figure{
     
-    height: 250px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+   
+ 
     
 }
 .dealer figure img{
     height: 100%;
-    padding: 1%;
+    width: 80%;
+    border-radius: 5px ;
 
 }
 
 .dealer-information{
-    width: 90%;
+    height: 100%;
+    width:50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
+    background-color: #97ba766e;
+    border-radius: 5px ;
+    
    
     
 }
 .dealer-information p{
     margin-top: 3%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: justify;
     color: #414141f5;
+    width: 88%;
 }
 
 .dealer-information div{
@@ -491,16 +504,16 @@ footer h3,
 .dealer-information a{
     background-color: #97BA76;
     height: 30px;
-    width: 100%px;
-    padding: 0 10px;
+    width: 100%;
+    padding: 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 10%;
     border-radius: 5px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border: solid 1px  #077004;
 }
 .dealer-information a:hover{
