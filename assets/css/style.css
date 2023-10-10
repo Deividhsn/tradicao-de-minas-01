@@ -6,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    
+    color: var(--font-color);
 
 
 }
@@ -14,44 +14,53 @@
 /* ROOT */
 
 :root{
-    --green-color: #16bb1188;
+    --important-color: #f5bf5b;
+    --background-color: #97BA76 ;
+    --firsty-background-color: #f4f4f4 ;
+    --secundary-background-color: #eee9e9 ;
+    --font-color: #151515;
 
 }
 
 /*BODDY*/
 body{
-    background-color: #fff;
+    background-color: var(--firsty-background-color);
     font-family: 'Noto Sans', sans-serif;
 
 }
 
 /* HEADER */
 header{
-    height:max-content;
+    height:100px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 1% 2%;
     position: fixed;
-    gap: 43%;
+   justify-content: space-between;
+    transition: .3s;
+    background-color: #eee9e98f;
 }
 
 header div img{
     width: 200px;
-    margin: 20px 0px;
-    
+    margin-left: 100px;
+    transition: .3s;
 }
 
 header nav{
-    width: 100%;
+    width: max-content;
+    margin-right: 100px;
+   
  
 }
 header nav ul{
     display: flex;
-    flex-direction: row;
+    gap: 50px;
     align-items: center;
+    transition: .3s;
+    
     /* justify-content: space-around;      */
-     gap: 6%;
+
 }
 header svg{
     fill: var(--secundary-bck-color);
@@ -62,7 +71,7 @@ header svg{
   }
 
 header nav ul li{
-    width: 80px; 
+
     height: 24px;    
     display: flex;
 }
@@ -73,7 +82,6 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1% 55px;
     color: #0b4723;
     font-weight: 600;
 }
@@ -87,17 +95,17 @@ header nav ul li a:hover{
 
 .alterHeader{
     height: 70px;
-    background-color: #f5bf5b;
+    background-color: var(--secundary-background-color);
+    box-shadow: 1px 1px 10px 1px #1515155d;
     display: flex;
     flex-direction: row;
-    gap: 50%;
     z-index: 999;
   
 
 }
 .alterHeader div img{
     width:100px;
-    margin: 4px 3px;
+    
 }
 .alterHeader nav ul li a{
     color: #0b4723;
@@ -109,7 +117,7 @@ header nav ul li a:hover{
 
 /* SECTION-BANNER */
 .section-banner{
-    height: 100%;
+    height:100vh;
     width: 100%;
     background-image: url(https://www.mundoboaforma.com.br/wp-content/uploads/2021/06/Biscoito-de-polvilho-1.jpg);
     background-repeat: no-repeat;
@@ -122,40 +130,42 @@ header nav ul li a:hover{
 .section-banner div{
     width: 100%;
     height: 100%;
-    background-color: #f5bf5b28;
+    background-color: rgba(0, 0, 0, 0.527);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3%;
+    gap: 50px;
     
 }
 
 .section-banner div h1{
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 900;
+    line-height: 65px;
     letter-spacing: 3px;
-    margin-top: 20%;
-    color: #000;
+    margin-top: 10%;
+    text-align: center;
+    color: var(--firsty-background-color);
 
 }
 .section-banner div b{
-    color: #005c1c;
+    color:var(--important-color);
     font-weight: 900;
 
 }
 .section-banner div p{
-    width: 80%;
-    font-size: 1.5rem;
-    margin: 5% 0;
-    font-weight: 400;
-    color: #000;
+    width: 55%;
+    line-height: 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--firsty-background-color);
     text-align: center;
-    line-height: 2.5rem;
+   
 
 }
 .section-banner div button{
-    height: 30px;
+    height: 50px;
     width: 150px;
     font-size: 1rem;
     padding: 2px 20px;
@@ -163,12 +173,13 @@ header nav ul li a:hover{
     text-align: center;
     font-weight: bolder;
     color: #fff;
-    background-color: #97BA76;
-    border:solid 1px  #077004;
+    background: none;
+    border:solid 2px  var(--firsty-background-color);
     margin-bottom: 5%;
+
 }
 .section-banner div button:hover{
-    background-color: #fff;
+    background-color:var(--important-color);
     color: #97BA76;
     border:solid 1px  #f29031;
 
@@ -178,82 +189,225 @@ header nav ul li a:hover{
 
 .section-all-produtos {
     height: 100%;
-    width: 100%;
+    width: 88%;
     margin-inline: auto;
     flex-direction: column;
     align-items: center;
+    margin-top: 90px;
     margin-inline: auto;
-    padding: 2% 1%;
     gap: 10px;
+    
    
 }
 .section-all-produtos h1,
-footer h3{
+footer h3,
+.highlights h1{
     width: 100%;
     align-items: center;
     text-align: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--font-color);
+    padding: 20px 0px;
     letter-spacing: 2px;
     font-weight: 900;
-    background-color: #97BA76;
+    
+    
 }
 .my{
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    gap: 10px;
+    gap: 30px;
+    
+    
 }
 
 .products{
-    height: 600px;
+    height:max-content;
     width: 100%;
-    background-color: #97BA76;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
+    
 }
 
 .my .pictures{
-    background-color: #f5bf5b;
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    
 }
 
 .my img{
     width: 100%;
-    height: 500px;
+    border-radius: 5px;
+   
+    
 }
 
-.sale{    
-    display: none;
-} 
+
+.sale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    background-color: #080808ea;
+    border-radius: 5px;
+    gap: 5px;
+    animation: openSale .3s;
+    opacity: 1;
+    
+
+}
+@keyframes openSale{
+    0%{
+        opacity: 0;
+        top:100%;
+    }
+}
+.sale h2{
+    color: var(--important-color);
+}
+.sale h4{
+    color: var(--background-color);
+}
+
+.sale p{
+    color: var(--firsty-background-color);
+    width: 80%;
+    font-size: .9rem;
+    margin: 20px 0px;
+}
+.sale p b{
+    color: var(--firsty-background-color);
+}
+
+.sale div{
+    display: flex;
+    gap: 10px;
+    width: 85%;
+    position: absolute;
+    bottom: 15px;
+}
+
+/*Buttons*/
 
 .aboutMore{
-    background-color: #005c1c;
-    height: 20%;
-    width: 30%;
-}
-
-.pictures .aboutMore:hover .sale{
-    display: block !important;
-    position: absolute;
-    top: 50%;
-
+    background-color: var(--important-color);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 800;
 }
 
 
+.sale a{
+    width: 100%;
+}
+.sale a button{
+    width: 100% !important;
+}
+
+.sale button{
+    width: 60%;
+    height: 30px;
+    white-space: nowrap;
+    background-color: var(--important-color);
+    border-radius: 5px;
+    font-size: .9rem;
+    cursor: pointer;
+    
+   
+}
+
+.aboutMore:hover{
+    background-color: var(--background-color);
+    border: solid 2px var(--important-color);
+    color: var(--firsty-background-color);
+}
+
+/* SECTION highlights */
+.highlights {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights div{
+    margin-top: 80px;
+    height: 100%;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    border-radius: 5px;
+    
+}
+
+.highlights ul{
+    display: flex;
+    gap: 100px;
+    margin-top: 60px;
+
+}
+
+.highlights ul li{
+    background-color: #f5bf5b69;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 25px;
+    box-shadow: 1px 3px 10px 3px #15151542;
+}    
+
+
+.highlights ul li figure{
+
+    height: 50%;
+    width: 50%;
+    
+}
+
+
+.highlights ul li figure img{
+    width: 100%;
+}
+
+.highlights ul li h5{
+    border: solid 2px var(--background-color);
+    height: 50px;
+    width: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
 
 
 
@@ -271,15 +425,14 @@ footer h3{
     padding: 2% 1%;
     gap: 10px;
     border-radius: 10px;
+    margin-top: 80px;
 }
 .section-about h1{
     width: 100%;
     text-align: center;
     font-size: 2rem;
-    color: #fff;
     letter-spacing: 2px;
     font-weight: 900;
-    background-color: #97BA76;
     margin-bottom: 3%;
 }
 .dealer{
