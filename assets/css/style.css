@@ -362,7 +362,7 @@ footer h3,
     display: flex;
     flex-direction: column;
     align-items: center;
-   background-color: var(--secundary-background-color);
+    background-color: var(--secundary-background-color);
     border-radius: 5px;
     
 }
@@ -598,101 +598,126 @@ html .ui-button.ui-state-disabled:active{
 
 /* FOOTER */
 footer{
-    height: 300px;
+    height: 450px;
     width: 100%;
-    background-color: #97BA76;
-    
+    background-color: var(--secundary-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:80px;
+  
   
 }
 footer .contacts{
     
     height: calc(100% - 25px);
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   
 }
 footer .contacts hr{
     height: 3px;
-    width: 100%;
-    background-color: #077004;
+    width:100%;
+    background-color: var(--important-color);
    
     
 }
 
 footer .contacts nav{
-    height: 100px;
+    height: 60%;
+    width: 88%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 50px;
+    background-color:var(--firsty-background-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px #15151538;
 }
 footer .contacts ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 100%;
-    gap: 200px;
-    /* background-color: #fff; */
-  
-   
-    
+    gap: 100px;
+    margin-bottom: 2px;   
 }
+footer .contacts ul hr{
+    height: 150px;
+    width: 2px;
+}
+
 footer .contacts ul li{
-    width: 150px;
-    height: 100px;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    gap: 10px;
-    padding: 1% 0;
-    background-color: #ffffff;
-    border: solid 1px #077004;
     border-radius: 10px;
 }
 
-footer .contacts ul li a{
-    height: 35px;
-    width: 35px;
+footer .contacts ul li div{
+    width: 150px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
 }
 
-i{
-    height: 35px;
-    width: 35px;
+footer .contacts ul li figure{
+
+    width: 280px;
+    height: 150px;
+}
+
+footer .contacts ul li figure img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(1px 10px 3px #02020246);
+}
+
+footer .contacts ul li div a{
+    height: 100%;
+    display: flex; 
+}
+
+i{  
     font-size: 35px;
     color: #077004;
     font-weight: 900;
 }
 
-
-
-footer .contacts ul li:hover i,
-footer .contacts ul li:hover h3
-
-{
-    color: #f5bf5b;
-
-}
-footer .contacts ul li:hover{
-    background-color: #97BA76;
-    border: solid 1px #ffffff;
+footer .contacts nav ul li div:hover {
+    background-color: #0870041c;
+    border-radius: 5px;
 }
 
-footer .contacts ul li a i{
-    height: 100%;
-    width: 100%;
-}
 footer .contacts ul li h3{
     font-size: 1.2rem;
     letter-spacing: normal;
     color: #077004;
     background: none;
     font-weight: 600;
-    
+    text-align: left;
 }
 
+footer .contacts ul li h4{
+    margin-bottom: 20px;
+}
+.schedule{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;   
+}
+
+.schedule p{
+    text-align: left;
+    width: 250px;
+}
 
 .end-page{
     height: 25px;
@@ -703,7 +728,7 @@ footer .contacts ul li h3{
     align-items: center;
     text-align: center;
     color: #0b4723;
-
+    gap: 50px;
 }
 
 /*RESPONSIVIDADE*/
