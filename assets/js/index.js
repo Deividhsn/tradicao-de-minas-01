@@ -20,3 +20,13 @@ $(document).ready(function () {
 $(".more").click(function(){
   $(".sale").css("display","none");
 })
+
+// ACCORDION
+
+$( function() {
+  $( "#accordion" ).accordion({
+    collapsible: true,
+    active: false
+  });
+  
+} );
