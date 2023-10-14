@@ -1,7 +1,11 @@
+
+
+// SCROLL HEADER
 let header = document.querySelector("header");
 window.addEventListener("scroll", function () {
     header.classList.toggle("alterHeader", window.scrollY > 0);
 });
+
 
 // CLICK MENU RESPONSIVO
 $(".openMenu").click(function(){  
