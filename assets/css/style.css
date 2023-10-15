@@ -735,7 +735,7 @@ footer .contacts ul li h4{
     gap: 50px;
 }
 
-/*RESPONSIVIDADE*/
+/*RESPONSIVIDADE WIDTH*/
 
 @media all and (max-width: 1100px){
 
@@ -1089,4 +1089,28 @@ footer .contacts ul li h4{
     .dealer .dealer-information div a{
         width: 90%;
     }
+}
+
+/* RESPONSIVIDADE HEIGHT */
+
+
+@media all and (max-height: 1440px){
+    .section-banner{
+        height: max-content;
+    }
+}
+
+@media all and (max-height: 1024px){
+   
+  .section-banner{
+    height: max-content;
+}
+.section-banner div h1{
+    margin-top: 15%;
+}
+
+}
+
+@media all and (max-height: px){
+
 }
