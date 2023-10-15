@@ -757,14 +757,14 @@ footer .contacts ul li h4{
     .dealer{
         flex-direction: column;
         align-items: center;
-        
+        gap: 20px;
 
     }
 
     .dealer div{
         width: 100%;
         display: flex;
-
+        
     }
     .dealer div img{
         width: 80%;
@@ -875,12 +875,34 @@ footer .contacts ul li h4{
         font-size: 1.2rem;
     }
 
-    footer .contacts ul li{
-        width: 80px;
-        height: 70px;
-        gap: 3px;
-        justify-content: center;
-      
+
+    .my{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .highlights{
+        height: 110%;
+    }
+    .highlights .highlights-box{
+        grid-template-columns: 1fr  1fr;
+        gap: 0;
+    }
+    .highlights .highlights-box div{
+        height: 70%;
+        gap: 50px;
+    }
+
+    .dealer{
+        gap: 50px !important;
+    }
+    footer .contacts ul{
+        gap: 20px;
+    }
+
+    footer .contacts ul li figure{
+
+        width: 180px;
+        height: 80px;
     }
 
     i{
@@ -890,9 +912,6 @@ footer .contacts ul li h4{
         color: #077004;
         font-weight: 900;
         text-align: center;
-    }
-    .my{
-        grid-template-columns: 1fr 1fr;
     }
 
 }
