@@ -954,7 +954,9 @@ footer .contacts ul li h4{
         margin-top: 3%;
     }
 
-    
+     .highlights{
+        height: 550px;
+     }
     .highlights div{
         margin-top: 35px;
     }
