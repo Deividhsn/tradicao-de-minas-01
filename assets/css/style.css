@@ -871,6 +871,7 @@ footer .contacts ul li h4{
 
     .section-banner div p{
         font-size: 1.2rem;
+        width: 88%;
     }
 
 
@@ -936,8 +937,8 @@ footer .contacts ul li h4{
     }
 
     .section-banner div p{
-        font-size: .8rem;
-        line-height: 20px;
+        font-size: .9rem;
+        line-height: 23px;
     }
     .my{
         grid-template-columns: 1fr
@@ -1039,4 +1040,27 @@ footer .contacts ul li h4{
         font-size: .6rem;
     }
 
+}
+
+@media all and (max-width: 390px){
+
+    .highlights{
+        height: max-content;
+    }
+    .highlights .highlights-box{
+        height: max-content;
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+        
+    }
+    .highlights .highlights-box div{
+        height: 200px !important;
+        width: 200px !important;
+    }
+
+    .highlights .highlights-box div:hover {
+        height: 200px;
+        width: 200px;
+ 
+    }
 }
