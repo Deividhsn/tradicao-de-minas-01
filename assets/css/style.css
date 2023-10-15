@@ -961,14 +961,14 @@ footer .contacts ul li h4{
     }
 
      .highlights{
-        height: 550px;
+        height: 550px !important;
      }
     .highlights div{
         margin-top: 35px;
     }
     .highlights .highlights-box div{
         gap: 20px;
-        height: 150px;
+        height: 150px !important;
         width: 130px;
 
     } 
@@ -980,10 +980,10 @@ footer .contacts ul li h4{
         gap: 0px !important;
     }
     .dealer div{
-        height: 400px;
+        height: 400px !important;
     }
     .dealer figure {
-        height: 80%;
+        height: 80% !important;
 
     }
     .dealer div img{
@@ -1063,10 +1063,10 @@ footer .contacts ul li h4{
     }
 
     .highlights{
-        height: max-content;
+        height: 100% !important;
     }
     .highlights .highlights-box{
-        height: max-content;
+        height: 100%;
         grid-template-columns: 1fr;
         padding: 20px 0;
         
@@ -1081,14 +1081,17 @@ footer .contacts ul li h4{
         width: 200px;
  
     }
+    .section-about{
+        height: 900px !important;
+    }
     .dealer div{
-        height: 300px;
+        height: 100% !important;
     }
     .dealer figure {
         height: 90%;
     }
     .dealer .dealer-information div{
-        height: max-content;
+        height: max-content !important;
     }
 
     .dealer .dealer-information div a{
@@ -1099,24 +1102,7 @@ footer .contacts ul li h4{
 /* RESPONSIVIDADE HEIGHT */
 
 
-@media all and (max-height: 1440px){
-    .section-banner{
-        height: max-content;
-    }
-}
-
-@media all and (max-height: 1024px){
-   
-  .section-banner{
-    height: max-content;
-}
-.section-banner div h1{
-    margin-top: 15%;
-}
-
-}
-
-@media all and (max-height: 730px){
+@media all and (max-height: 300px){
 
     h1{
         font-size: 1.5rem !important;
