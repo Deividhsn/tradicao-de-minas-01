@@ -1044,6 +1044,19 @@ footer .contacts ul li h4{
 
 @media all and (max-width: 390px){
 
+    .aboutMore{
+        width: 81%;
+        height: 30px;
+        font-weight: 600;
+        margin-top: 3%;
+    }
+    .sale{
+        gap: 0px;
+    }
+    .sale p {
+        margin: 10px 0;
+    }
+
     .highlights{
         height: max-content;
     }
@@ -1062,5 +1075,16 @@ footer .contacts ul li h4{
         height: 200px;
         width: 200px;
  
+    }
+    .dealer div{
+        height: 400px;
+    }
+    .dealer figure {
+        height: 70%;
+    }
+    
+
+    .dealer .dealer-information div a{
+        width: 90%;
     }
 }
