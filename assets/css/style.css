@@ -960,10 +960,13 @@ footer .contacts ul li h4{
     }
     .highlights .highlights-box div{
         gap: 20px;
+        height: 150px;
+        width: 150px;
 
     } 
     .highlights .highlights-box div:hover{
-        display: flex;
+        height: 150px;
+        width: 150px;
     }
     .dealer{
         gap: 0px !important;
