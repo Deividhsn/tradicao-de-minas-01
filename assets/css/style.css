@@ -978,13 +978,18 @@ footer .contacts ul li h4{
         height: 400px;
     }
     .dealer figure {
-        height: 90%;
+        height: 80%;
+
     }
     .dealer div img{
         height: 100%;
+        width: 100%;
     }
     .dealer-information p{
         font-size: .8rem;
+    }
+    .dealer-information {
+        height: 500px !important;
     }
     .dealer-information div a {
         font-size: .8rem;
