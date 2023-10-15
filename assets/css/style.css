@@ -948,6 +948,7 @@ footer .contacts ul li h4{
     }
     .pictures figure img{
         height: 100%;
+        width: 90%;
     }
     .aboutMore{
         width: 81%;
@@ -963,7 +964,7 @@ footer .contacts ul li h4{
     .highlights .highlights-box div{
         gap: 20px;
         height: 150px;
-        width: 150px;
+        width: 130px;
 
     } 
     .highlights .highlights-box div:hover{
