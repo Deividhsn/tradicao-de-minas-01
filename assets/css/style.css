@@ -1077,12 +1077,14 @@ footer .contacts ul li h4{
  
     }
     .dealer div{
-        height: 400px;
+        height: 300px;
     }
     .dealer figure {
-        height: 70%;
+        height: 90%;
     }
-    
+    .dealer .dealer-information div{
+        height: max-content;
+    }
 
     .dealer .dealer-information div a{
         width: 90%;
