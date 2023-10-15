@@ -886,6 +886,11 @@ footer .contacts ul li h4{
         grid-template-columns: 1fr 1fr;
     }
 
+   
+    .sale p {
+        margin: 15px 0 !important;
+    }
+
     .highlights{
         height: 110%;
     }
@@ -951,6 +956,14 @@ footer .contacts ul li h4{
     .my{
         grid-template-columns: 1fr 1fr;
 
+    
+    }
+    .sale h4{
+        width: 80% !important; 
+        
+    }
+    .sale p {
+        margin: 10px 0 !important;
     }
     .pictures figure{
         height: 350px;
