@@ -914,7 +914,22 @@ footer .contacts ul li h4{
 
 }
 @media all and (max-width: 500px){
+    
+    h1{
+        font-size: 1.5rem !important;
+    }
 
+     header div img{
+      
+        margin-left: 30px;
+       
+    }
+    
+    header nav{
+        width: max-content;
+        margin-right: 30px;
+        
+    }
     
     .section-banner div h1{
         line-height: 30px;
@@ -938,6 +953,40 @@ footer .contacts ul li h4{
         width: 81%;
         margin-top: 3%;
     }
+
+    
+    .highlights div{
+        margin-top: 35px;
+    }
+    .highlights .highlights-box div{
+        gap: 20px;
+
+    } 
+    .highlights .highlights-box div:hover{
+        display: flex;
+    }
+    .dealer{
+        gap: 0px !important;
+    }
+    .dealer div{
+        height: 400px;
+    }
+    .dealer figure {
+        height: 90%;
+    }
+    .dealer div img{
+        height: 100%;
+    }
+    .dealer-information p{
+        font-size: .8rem;
+    }
+    .dealer-information div a {
+        font-size: .8rem;
+        white-space: nowrap;
+        width: 70%;
+        margin-top: 5%;
+    }
+
 
     footer{
         height: 100%;
