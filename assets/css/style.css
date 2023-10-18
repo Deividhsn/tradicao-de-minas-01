@@ -828,7 +828,7 @@ footer .contacts ul li h4{
       }
  
 
-      header ul li a{
+      header nav ul li a{
         width: 250px;
         height: 100%;
         display: flex;
@@ -985,6 +985,10 @@ footer .contacts ul li h4{
         margin-right: 30px;
         
     }
+
+    header nav ul li a{
+        width: 250px;
+    }
     
     .section-banner div h1{
         margin-top: 100px !important;
@@ -1131,6 +1135,9 @@ footer .contacts ul li h4{
         width: max-content;
         margin-right: 30px;
         
+    }
+    header nav ul li a{
+        width: 250px;
     }
   
     .section-banner{
