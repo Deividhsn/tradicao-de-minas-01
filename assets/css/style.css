@@ -289,10 +289,11 @@ footer h3,
 }
 .sale h2{
     color: var(--important-color);
-    margin-top: 50px;
+    margin-top: 18px;
 }
 .sale h4{
     color: #91d166;
+    padding: 0 10px;
 }
 
 .sale p{
