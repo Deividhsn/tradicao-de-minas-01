@@ -450,6 +450,30 @@ footer h3,
     font-weight: 900;
     margin-bottom: 3%;
 }
+
+.our_history{
+    
+    height: max-content;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.our_history p{
+    height: 350px;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 8%;
+    text-align: justify;
+    margin-top: 50px;
+    padding: 7%;
+    border-radius: 10px; 
+    background-color: #f5bf5b28;
+}
+
 .dealer{
     height: max-content;
     width: 88%;
@@ -497,8 +521,8 @@ footer h3,
     
 }
 .dealer-information p{
-    margin-top: 3%;
-    font-size: 1rem;
+    margin-top: 12%;
+    font-size: 1.2rem;
     text-align: justify;
     color: #414141f5;
     width: 88%;
@@ -519,7 +543,7 @@ footer h3,
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 32%;
     border-radius: 5px;
     color: #fff;
     font-size: 1rem;
@@ -563,7 +587,7 @@ footer h3,
     background-color: var(--secundary-background-color);
     border-radius: 5px;
     padding: 1%;
-
+    margin-top: 50px;
 }
 
 .ui-accordion .ui-accordion-header{
@@ -953,6 +977,10 @@ footer .contacts ul li h4{
     .dealer{
         gap: 50px !important;
     }
+
+    .dealer-information a{
+        margin-top: 10%;
+    }
     
     footer .contacts nav{
         width: 95%;
@@ -1074,8 +1102,9 @@ footer .contacts ul li h4{
         height: 100%;
         width: 100%;
     }
+    .our_history p,
     .dealer-information p{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .dealer-information {
         height: 450px !important;
@@ -1219,6 +1248,7 @@ footer .contacts ul li h4{
         height: 100%;
         width: 100%;
     }
+    .our_history p,
     .dealer-information p{
         font-size: .8rem;
     }
