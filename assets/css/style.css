@@ -38,7 +38,7 @@ header{
     position: fixed;
    justify-content: space-between;
     transition: .3s;
-    background-color: #eee9e98f;
+    background-color: #eee9e9;
 }
 
 header div img{
@@ -85,6 +85,7 @@ header nav ul li a{
     color: var(--background-color);
     font-weight: 600;
     white-space: nowrap;
+    padding: 0 5px;
 }
 
 
@@ -521,6 +522,7 @@ footer h3,
     color: #fff;
     font-size: 1rem;
     border: solid 1px  #077004;
+    padding: 0 10px;
 }
 .dealer-information a:hover{
     background-color: #fff;
@@ -673,7 +675,7 @@ footer .contacts ul li div{
 
 footer .contacts ul li figure{
 
-    width: 280px;
+    width: 400px;
     height: 150px;
 }
 
@@ -788,7 +790,9 @@ footer .contacts ul li h4{
     }
 
 
-
+    footer .contacts ul li figure {
+        width: 250px;
+    }
 
 
 }
@@ -817,24 +821,35 @@ footer .contacts ul li h4{
 
       
       header nav ul li{
-        background-color: var(--important-color);
+        background: none;
         height: 30px !important;
-        width: 50% !important;
         border-radius: 5px;   
        
       }
  
 
       header ul li a{
-        width: 100%;
+        width: 250px;
         height: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-transform: uppercase;
-      }
+        color: var(--secundary-background-color) !important;
+    }
+
+        header ul li a p{
+        color: var(--important-color);
+    }
+
+        header ul li a hr{
+            height: 1px;
+            width: 100%;
+            background: var(--important-color);
+        }
      
-      .display{
+        .display{
        
         position: absolute;
         background-color: #151515d5;
@@ -849,8 +864,20 @@ footer .contacts ul li h4{
         padding-top: 8%; 
         animation: openMenu .5s;
         gap: 5%;
-      }
+    }
 
+        .alterHeader nav ul li a{
+        background: none;
+    
+    }
+    .alterHeader nav ul li a hr{
+        background-color: var(--secundary-background-color);
+    }
+
+        .alterHeader nav ul li a p{
+        color: var(--secundary-background-color);
+    }
+    
       
 
 
@@ -906,23 +933,38 @@ footer .contacts ul li h4{
     .dealer{
         gap: 50px !important;
     }
+    
+    footer .contacts nav{
+        width: 95%;
+    }
+    
     footer .contacts ul{
         gap: 20px;
     }
 
+  
+  
+    footer .contacts ul li div h3{
+        font-size: 1rem;
+
+    }
+
     footer .contacts ul li figure{
 
-        width: 180px;
+        width: 200px;
         height: 80px;
     }
 
     i{
-        height: 35px;
-        width: 35px;
-        font-size: 25px;
+       
+        font-size: 30px;
         color: #077004;
         font-weight: 900;
         text-align: center;
+   
+    }
+    footer .contacts ul li ul li p{
+        font-size: .9rem;
     }
 
 }
@@ -1041,7 +1083,11 @@ footer .contacts ul li h4{
        width: 100px;
     } 
     footer .contacts ul li div{
-        margin-top: 5%;
+        margin-top: 1%;
+    }
+    footer .contacts ul li figure{
+        height: 50%;
+        width: 300px;
     }
      
     footer .contacts ul li div h3{    
@@ -1055,6 +1101,10 @@ footer .contacts ul li h4{
 
     .schedule{
         margin-bottom: 3%;
+    }
+
+    .schedule p{
+        margin-bottom: 5%;
     }
 
     .end-page{
@@ -1082,6 +1132,7 @@ footer .contacts ul li h4{
         margin-right: 30px;
         
     }
+  
     .section-banner{
         height: 100vh;
 
@@ -1150,7 +1201,7 @@ footer .contacts ul li h4{
     .dealer-information div a {
         font-size: .8rem !important;
         white-space: nowrap;
-        width: 100% !important;
+        width: 110% !important;
         margin-top: 5%;
     }
 
@@ -1200,10 +1251,12 @@ footer .contacts ul li h4{
 
 @media all and (max-width: 390px){
     
-
+    header nav ul li a{
+        width: 250px;
+    }
+  
     .aboutMore{
         width: 81%;
-        height: 30px;
         font-weight: 600;
         margin-top: 3%;
     }
@@ -1248,7 +1301,7 @@ footer .contacts ul li h4{
     }
 
     .dealer .dealer-information div a{
-        width: 100% !important;
+        width: 110% !important;
         font-size: .7rem !important;
     }
 }
@@ -1259,6 +1312,10 @@ footer .contacts ul li h4{
         width: 100% !important;
         font-size: .55rem !important;
     
+    }
+    footer .contacts ul li figure{
+        height: 50%;
+        width: 250px;
     }
 }
 
