@@ -217,6 +217,7 @@ footer h3,
     padding: 20px 0px;
     letter-spacing: 2px;
     font-weight: 900;
+    margin-bottom: 10px;
     
     
 }
@@ -227,6 +228,7 @@ footer h3,
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     gap: 30px;
+    margin-top: 5%;
     
     
 }
@@ -448,7 +450,8 @@ footer h3,
     font-size: 2rem;
     letter-spacing: 2px;
     font-weight: 900;
-    margin-bottom: 3%;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .our_history{
@@ -462,35 +465,37 @@ footer h3,
 
 }
 .our_history p{
-    height: 350px;
-    width: 100%;
+    height: max-content;
+    width: 88%;
     font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 8%;
     text-align: justify;
-    margin-top: 50px;
-    padding: 7%;
+    margin-top: 10px;
     border-radius: 10px; 
-    background-color: #f5bf5b28;
+    
 }
 
 .dealer{
     height: max-content;
     width: 88%;
      display: flex;
+     flex-direction: column;
     justify-content: center;
     margin-bottom: 80px;
     margin-top: 60px;
+    background: var(--secundary-background-color);
+    box-shadow: 1px 3px 10px 3px #15151513;
     
 }
 
-.dealer div{
-    height: 500px;
+.dealer .all-dealer{
+    
+    display: flex;
 }
 
 .dealer figure{
     
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -501,21 +506,21 @@ footer h3,
 }
 .dealer figure img{
     height: 100%;
-    width: 100%;
+    width: 80%;
     border-radius: 5px ;
 
 }
 
 .dealer-information{
     height: 100%;
-    width:50%;
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-inline: auto;
     background-color: var(--secundary-background-color);
     border-radius: 5px ;
-    box-shadow: 1px 3px 10px 3px #15151513;
+  
     
    
     
@@ -584,7 +589,6 @@ footer h3,
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    background-color: var(--secundary-background-color);
     border-radius: 5px;
     padding: 1%;
     margin-top: 50px;
@@ -809,25 +813,28 @@ footer .contacts ul li h4{
 
     }
 
-    .dealer div{
+    .dealer .all-dealer{
         width: 100%;
         display: flex;
         
     }
-    .dealer div img{
+    .dealer .all-dealer div img{
         width: 80%;
     }
+   
     .dealer-information div{  
       
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 50px;
 
     }
 
     .dealer-information a{
-        width: 50%;
+        width: 100%;
+        margin-top: 10%;
     }
     .highlights .highlights-box div{
        gap: 18px; 
@@ -976,6 +983,14 @@ footer .contacts ul li h4{
 
     .dealer{
         gap: 50px !important;
+      
+    }
+    .all-dealer{
+        flex-direction: column;
+    }
+    .dealer-information {
+        width: 100%;
+        
     }
 
     .dealer-information a{
@@ -1090,8 +1105,7 @@ footer .contacts ul li h4{
     .dealer{
         gap: 0px !important;
     }
-    .dealer div{
-        height: 450px;
+    .dealer .all-dealer{
         width: 80%;
     }
     .dealer figure {
@@ -1107,7 +1121,7 @@ footer .contacts ul li h4{
         font-size: 1rem;
     }
     .dealer-information {
-        height: 450px !important;
+        height: max-content !important;
     }
     .dealer-information div a {
         font-size: .8rem !important;
@@ -1237,7 +1251,7 @@ footer .contacts ul li h4{
     .dealer{
         gap: 0px !important;
     }
-    .dealer div{
+    .dealer .all-dealer{
         height: max-content !important;
     }
     .dealer figure {
@@ -1252,14 +1266,14 @@ footer .contacts ul li h4{
     .dealer-information p{
         font-size: .8rem;
     }
-    .dealer-information {
+    /* .dealer-information {
         height: 500px !important;
-    }
+    } */
     .dealer-information div a {
         font-size: .8rem !important;
         white-space: nowrap;
         width: 110% !important;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
   
@@ -1351,7 +1365,7 @@ footer .contacts ul li h4{
     .section-about{
         height: max-content !important;
     }
-    .dealer div{
+    .dealer .all-dealer{
         height: 100% !important;
     }
     .dealer figure {
